@@ -1,0 +1,9 @@
+Instructions:
+
+* Use JDBC(java database connector) to connect your database with the the project java files.
+* 
+* Put your mysql database credentials in the DBconnection file as I've provided in there. 
+*
+* Use SceneBuilder if you want to change anything or want to add some new features.
+* 
+* As this is my first project it might have some flaws and bugs.

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MilkmanPackage.MilkmanViewController">
+   <children>
+      <ImageView fx:id="imgCustomer" fitHeight="160.0" fitWidth="140.0" layoutX="609.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="631.0" layoutY="255.0" mnemonicParsing="false" onAction="#doBrowse" prefHeight="25.0" prefWidth="95.0" text="Browse" />
+      <TextField fx:id="txtImagePath" layoutX="572.0" layoutY="296.0" prefHeight="25.0" prefWidth="214.0" />
+      <TextField fx:id="txtMobile" layoutX="251.0" layoutY="255.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="txtAddress" layoutX="251.0" layoutY="309.0" prefHeight="25.0" prefWidth="196.0" />
+      <Separator layoutX="187.0" layoutY="376.0" prefHeight="25.0" prefWidth="613.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="380.0" prefHeight="17.0" prefWidth="140.0" text="Milk Details" />
+      <Label layoutX="143.0" layoutY="205.0" prefHeight="17.0" prefWidth="95.0" text="Customer Name" />
+      <Label layoutX="143.0" layoutY="313.0" prefHeight="17.0" prefWidth="95.0" text="Address" />
+      <Label layoutX="143.0" layoutY="261.0" prefHeight="17.0" prefWidth="95.0" text="Mobile no." />
+      <Label layoutX="141.0" layoutY="454.0" text="Cow quantity" />
+      <TextField fx:id="txtCowQ" layoutX="225.0" layoutY="450.0" />
+      <Label layoutX="133.0" layoutY="505.0" text="Buffalo qunatity" />
+      <TextField fx:id="txtBuffaloQ" layoutX="226.0" layoutY="501.0" />
+      <Label layoutX="406.0" layoutY="454.0" prefHeight="17.0" prefWidth="71.0" text="Cow price" />
+      <TextField fx:id="txtCowP" layoutX="480.0" layoutY="450.0" />
+      <Label layoutX="408.0" layoutY="505.0" text="Buffalo price" />
+      <TextField fx:id="txtBuffaloP" layoutX="481.0" layoutY="501.0" />
+      <DatePicker fx:id="DPdos" layoutX="301.0" layoutY="567.0" prefHeight="25.0" prefWidth="214.0" />
+      <Label layoutX="185.0" layoutY="571.0" prefHeight="17.0" prefWidth="108.0" text="Date when started" />
+      <Button layoutX="142.0" layoutY="684.0" mnemonicParsing="false" onAction="#doNew" prefHeight="25.0" prefWidth="95.0" text="New" />
+      <Button layoutX="285.0" layoutY="684.0" mnemonicParsing="false" onAction="#doSave" prefHeight="25.0" prefWidth="95.0" text="Save" />
+      <Button layoutX="426.0" layoutY="684.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="25.0" prefWidth="95.0" text="Update" />
+      <Button layoutX="564.0" layoutY="684.0" mnemonicParsing="false" onAction="#doLeft" prefHeight="25.0" prefWidth="95.0" text="Left" />
+      <ComboBox fx:id="comboName" editable="true" layoutX="250.0" layoutY="201.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label alignment="CENTER" layoutX="114.0" layoutY="74.0" prefHeight="71.0" prefWidth="551.0" text="Customer Entry Form">
+         <font>
+            <Font name="Segoe UI" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="480.0" layoutY="201.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="25.0" prefWidth="95.0" text="Fetch" />
+   </children>
+</AnchorPane>

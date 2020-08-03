@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bill.BillViewController">
+   <children>
+      <ListView fx:id="listViewNames" layoutX="51.0" layoutY="78.0" onMouseClicked="#doDoubleClick" prefHeight="544.0" prefWidth="200.0" />
+      <DatePicker fx:id="DPDos" layoutX="380.0" layoutY="99.0" />
+      <DatePicker fx:id="DPDoe" layoutX="380.0" layoutY="176.0" />
+      <Label alignment="CENTER" layoutX="442.0" layoutY="237.0" prefHeight="17.0" prefWidth="63.0" text="Days">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="296.0" layoutX="380.0" layoutY="287.0" startX="-100.0" />
+      <Line endX="296.0" layoutX="380.0" layoutY="456.0" startX="-100.0" />
+      <Button layoutX="418.0" layoutY="515.0" mnemonicParsing="false" onAction="#doGetVariations" prefHeight="25.0" prefWidth="99.0" text="Get Variations" />
+      <Line endX="296.0" layoutX="380.0" layoutY="560.0" startX="-100.0" />
+      <Button layoutX="382.0" layoutY="588.0" mnemonicParsing="false" onAction="#doTotal" prefHeight="25.0" prefWidth="74.0" text="Total" />
+      <Button layoutX="418.0" layoutY="646.0" mnemonicParsing="false" onAction="#doSave" prefHeight="25.0" prefWidth="99.0" text="Save &amp; SMS" />
+      <Label fx:id="lblTotal" alignment="CENTER" layoutX="477.0" layoutY="588.0" prefHeight="25.0" prefWidth="62.0" text="_________">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="296.0" layoutX="380.0" layoutY="82.0" startX="-100.0" />
+      <Label layoutX="286.0" layoutY="65.0" text="Dates">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="270.0" text="Milk">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="437.0" text="Variations">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="540.0" text="Total">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="416.0" text="Mobile no.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="312.0" text="Cow qty.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="312.0" text="Buffalo qty.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="370.0" text="Cow price">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="370.0" text="Buffalo price">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDays" alignment="CENTER" layoutX="506.0" layoutY="235.0" prefHeight="25.0" prefWidth="33.0" text="____">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCowQty" alignment="CENTER" layoutX="364.0" layoutY="308.0" prefHeight="25.0" prefWidth="33.0" text="____">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCowPrice" alignment="CENTER" layoutX="364.0" layoutY="366.0" prefHeight="25.0" prefWidth="33.0" text="____">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBuffaloPrice" alignment="CENTER" layoutX="517.0" layoutY="366.0" prefHeight="25.0" prefWidth="33.0" text="____">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBuffaloQty" alignment="CENTER" layoutX="517.0" layoutY="308.0" prefHeight="25.0" prefWidth="33.0" text="____">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMobile" alignment="CENTER" layoutX="403.0" layoutY="412.0" prefHeight="25.0" prefWidth="174.0" text="__________________________">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCowVariation" alignment="CENTER" layoutX="381.0" layoutY="480.0" prefHeight="25.0" prefWidth="33.0" text="____">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBuffaloVariation" alignment="CENTER" layoutX="558.0" layoutY="480.0" prefHeight="25.0" prefWidth="33.0" text="____">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="482.0" text="Cow Variation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="484.0" text="Buffalo Variation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="274.0" layoutY="102.0" prefHeight="20.0" prefWidth="89.0" text="Date of Start">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="276.0" layoutY="179.0" prefHeight="20.0" prefWidth="89.0" text="Date of End">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="371.0" layoutY="235.0" mnemonicParsing="false" onAction="#doGetDays" text="Get Days" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" styleClass="bodybg" stylesheets="@Background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboard.DashboardViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="193.0" layoutY="26.0" prefHeight="51.0" prefWidth="296.0" text="Dashboard" textFill="#f51010">
+         <font>
+            <Font name="Segoe UI" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="139.0" fitWidth="143.0" layoutX="14.0" layoutY="94.0" onMouseClicked="#doopenEntryForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@546131.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="129.0" layoutX="183.0" layoutY="93.0" onMouseClicked="#doopenTotalBill" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="240.0" fitWidth="139.0" layoutX="526.0" layoutY="94.0" onMouseClicked="#doopenCustomerList" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="139.0" fitWidth="143.0" layoutX="357.0" layoutY="94.0" onMouseClicked="#doOpenVariation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="129.0" layoutX="108.0" layoutY="291.0" onMouseClicked="#doopenVariationLog" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="129.0" layoutX="291.0" layoutY="291.0" onMouseClicked="#doopenPaymentCollection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="139.0" fitWidth="143.0" layoutX="467.0" layoutY="297.0" onMouseClicked="#doopenPaymentHistory" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download%20(3).png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="244.0" prefHeight="22.0" prefWidth="115.0" text="Entry Form" textFill="#d30a0a">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="190.0" layoutY="244.0" prefHeight="22.0" prefWidth="115.0" text="Total Bill" textFill="#d30a0a">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="381.0" layoutY="244.0" prefHeight="22.0" prefWidth="115.0" text="Variation Console" textFill="#d30a0a">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="538.0" layoutY="244.0" prefHeight="22.0" prefWidth="115.0" text="Customer List" textFill="#d30a0a">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="477.0" layoutY="449.0" prefHeight="25.0" prefWidth="139.0" text="Payment History" textFill="#d30a0a">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="284.0" layoutY="449.0" prefHeight="25.0" prefWidth="143.0" text="Payment Collection" textFill="#d30a0a">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="98.0" layoutY="449.0" prefHeight="22.0" prefWidth="115.0" text="Variation log" textFill="#d30a0a">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

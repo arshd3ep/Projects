@@ -1,0 +1,4 @@
+.bodybg{
+	-fx-background-image: url("/F:\Eclipse workspace\Milkman\src\Dashboard\bck.jpg")
+	-fx-background-size: 100% 100%;
+}

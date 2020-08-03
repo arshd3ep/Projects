@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Variations.VariationsViewController">
+   <children>
+      <Button layoutX="87.0" layoutY="508.0" mnemonicParsing="false" onAction="#doDeleteOthers" prefHeight="25.0" prefWidth="130.0" text="Delete Others">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtVCowQ" layoutX="340.0" layoutY="200.0" prefHeight="33.0" prefWidth="50.0" />
+      <Label layoutX="323.0" layoutY="183.0" text="Cow Quantity">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="426.0" layoutY="183.0" text="Buffalo Quantity">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="253.0" layoutY="235.0" prefHeight="25.0" prefWidth="87.0" text="Standard Qnty" />
+      <TextField fx:id="txtVBuffaloQ" layoutX="451.0" layoutY="200.0" prefHeight="33.0" prefWidth="50.0" />
+      <Label fx:id="lblCQ" alignment="CENTER" layoutX="351.0" layoutY="235.0" prefHeight="25.0" prefWidth="28.0" text="CQ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelBQ" alignment="CENTER" layoutX="462.0" layoutY="235.0" prefHeight="25.0" prefWidth="28.0" text="BQ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="281.0" layoutY="41.0" prefHeight="70.0" prefWidth="286.0" text="Variations Panel">
+         <font>
+            <Font name="Footlight MT Light" size="39.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DPdate" layoutX="364.0" layoutY="317.0" />
+      <Label alignment="CENTER" layoutX="289.0" layoutY="317.0" prefHeight="25.0" prefWidth="62.0" text="Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="359.0" layoutY="401.0" mnemonicParsing="false" onAction="#doSave" prefHeight="47.0" prefWidth="130.0" text="Save">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listViewCName" editable="true" layoutX="52.0" layoutY="54.0" prefHeight="439.0" prefWidth="200.0" />
+      <CheckBox fx:id="chkAbsent" alignment="CENTER" layoutX="381.0" layoutY="274.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Absent">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>
